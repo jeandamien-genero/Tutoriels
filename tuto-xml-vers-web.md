@@ -1,6 +1,6 @@
 # Tutoriel pour lxml & Flask
 
-Par Lucas Terriel, Jean-Damien Généro.
+Contributeurs : Lucas Terriel(@Lucaterre), Jean-Damien Généro(@jeandamien-genero).
 
 Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML dans une application Flask via la librairie lxml.
 
