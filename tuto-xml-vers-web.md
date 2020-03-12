@@ -38,6 +38,8 @@ Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML
 
 * Écrire les règles de transformation XSL.
 
+*Exemple :*
+
 ```XSLT
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -55,6 +57,8 @@ Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML
 ---
 
 ## Étape 3 : Python
+
+*Modèle :*
 
 ```Python
 @app.route("chemin_route/<int:paramètre_fonction>")
@@ -76,17 +80,17 @@ def nom_fonction(paramètre_fonction):
 
 5. Appliquer la feuille de transformation ```xslt_transformer``` à ```source_doc```.
 
-  * La variable définie dans le document XSLT doit être indiquée comme un paramètre de la variable ```xslt_transformer``` et correspondre au paramètre de la fonction Python. 
+  - La variable définie dans le document XSLT doit être indiquée comme un paramètre de la variable ```xslt_transformer``` et correspondre au paramètre de la fonction Python. 
 
-  * Le paramètre de la fonction Python doit obligatoirement être casté en ```str``` s'il s'agit d'un autre type.
+  - Le paramètre de la fonction Python doit obligatoirement être casté en ```str``` s'il s'agit d'un autre type.
 
 6. Retourner la template via l'objet Flask ```render_template()```.
 
-  * Définir le chemin vers le document html où le retour de la fonction Python sera affiché ;
+  - Définir le chemin vers le document html où le retour de la fonction Python sera affiché ;
 
-  * Définir une template Flask qui contient le résultat de la transformation XSL, i. e. ```output_doc```.
+  - Définir une template Flask qui contient le résultat de la transformation XSL, i. e. ```output_doc```.
 
-  * D'autres templates peuvent être définies, suivant les besoins du rendu.
+  - D'autres templates peuvent être définies, suivant les besoins du rendu.
 
 ---
 
@@ -107,7 +111,7 @@ def nom_fonction(paramètre_fonction):
 
 * Dans le fichier HTML, le résultat de la transformation XSL est affichée au sein d'une template entre deux accolades ```{{}}```
 
-  * Il faut impérativement ajouter le mode ```|safe``` à la template pour les éléments HTML soit interprétées par le navigateur.
+  * Il faut impérativement ajouter le mode ```|safe``` à la template pour que les éléments HTML soit interprétés par le navigateur.
 
 ---
 
