@@ -18,7 +18,9 @@ Ce tutoriel a pour but d'expliquer comment intégrer les notes d'un document XML
 
 ---
 
-## II. J'ai commencé par faire la structure de ma template : 
+## II. Structure
+
+* J'ai commencé par faire la structure de ma template : 
 
 ```HTML
 <xsl:template match="/" > <!-- Je matche la racine -->
