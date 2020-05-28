@@ -1,12 +1,27 @@
-# Tutoriel pour lxml & Flask
-
-Contributeurs : [@Lucaterre](https://github.com/Lucaterre), [@jeandamien-genero](https://github.com/jeandamien-genero).
-
-Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML dans une application Flask via la librairie lxml.
+---
+- titre: Exposer un texte structuré en XML sur le web avec XSLT et le framework Python-Flask
+- auteur: Jean-Damien Généro(https://github.com/jeandamien-genero) et Lucas Terriel(https://github.com/Lucaterre)
+- date: 2020-05-28
 
 ---
 
-## Pré-requis
+Exposer un texte structurer en XML sur le web avec XSLT et le framework Python-Flask
+-----------------------
+
+Contenu
+-----------------------
+
+[Ici créer un sommaire]
+
+
+Ojectifs de la leçon
+-----------------------
+
+Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML dans une application Flask via la librairie lxml.
+
+
+Pré-requis
+-----------------------
 
 * Python 3.x
 
@@ -16,7 +31,8 @@ Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML
 
 ---
 
-## Étape 1 : XML
+Structurer le texte en XML 
+-----------------------
 
 * Structurer un texte en un document XML ;
 
@@ -26,7 +42,8 @@ Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML
 
 ---
 
-## Étape 2 : XSL
+Rédiger une feuille de transformation XSLT
+-----------------------
 
 * Les versions de l'XML et de l'XSL doivent être 1.0 ;
 
@@ -56,7 +73,8 @@ Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML
 
 ---
 
-## Étape 3 : Python
+Utiliser le framework Flask pour lier la Feuille XSLT à sa template HTML
+-----------------------
 
 *Modèle :*
 
@@ -94,7 +112,8 @@ def nom_fonction(paramètre_fonction):
 
 ---
 
-## Étape 4 : HTML
+Arranger la template HTML
+-----------------------
 
 ```HTML
 {% extends "conteneur.html" %}
@@ -113,10 +132,15 @@ def nom_fonction(paramètre_fonction):
 
   * Il faut impérativement ajouter le mode ```|safe``` à la template pour que les éléments HTML soit interprétés par le navigateur.
 
----
+Résultat
+-----------------------
 
-## Documentation
+Bibliographie
+-----------------------
 
 * lxml : https://lxml.de/
 
 * Flask : https://palletsprojects.com/p/flask/
+
+A propos des auteurs
+-----------------------
