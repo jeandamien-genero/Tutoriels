@@ -5,7 +5,7 @@
 
 ---
 
-Exposer un texte structurer en XML sur le web avec XSLT et le framework Python-Flask
+Exposer un texte structuré en XML sur le web avec XSLT et le framework Python-Flask
 -----------------------
 
 Contenu
