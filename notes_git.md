@@ -28,6 +28,12 @@ git config --global user.email email
   git push
 ```
 
+  * Rappatrier une branche en local :
+  ```Git
+  git fetch origin <nom de la branche>
+  git checkout --track origin/<nom de la branche>
+  ```
+
   * Supprimer une ancienne branche en local (ici, ```dev```) :
   ```Git
   git branch -d dev
