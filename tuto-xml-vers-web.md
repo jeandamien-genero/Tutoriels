@@ -1,27 +1,12 @@
----
-- titre: Exposer un texte structuré en XML sur le web avec XSLT et le framework Python-Flask
-- auteur: Jean-Damien Généro(https://github.com/jeandamien-genero) et Lucas Terriel(https://github.com/Lucaterre)
-- date: 2020-05-28
+# Tutoriel pour lxml & Flask
 
----
-
-Exposer un texte structuré en XML sur le web avec XSLT et le framework Python-Flask
------------------------
-
-Contenu
------------------------
-
-[Ici créer un sommaire]
-
-
-Ojectifs de la leçon
------------------------
+Contributeurs : [@Lucaterre](https://github.com/Lucaterre), [@jeandamien-genero](https://github.com/jeandamien-genero).
 
 Ce tutoriel a pour but d'expliquer comment afficher le contenu d'un document XML dans une application Flask via la librairie lxml.
 
+---
 
-Pré-requis
------------------------
+## Pré-requis
 
 * Python 3.x
 
@@ -31,8 +16,7 @@ Pré-requis
 
 ---
 
-Structurer le texte en XML 
------------------------
+## Étape 1 : XML
 
 * Structurer un texte en un document XML ;
 
@@ -42,8 +26,7 @@ Structurer le texte en XML
 
 ---
 
-Rédiger une feuille de transformation XSLT
------------------------
+## Étape 2 : XSL
 
 * Les versions de l'XML et de l'XSL doivent être 1.0 ;
 
@@ -73,8 +56,7 @@ Rédiger une feuille de transformation XSLT
 
 ---
 
-Utiliser le framework Flask pour lier la Feuille XSLT à sa template HTML
------------------------
+## Étape 3 : Python
 
 *Modèle :*
 
@@ -112,8 +94,7 @@ def nom_fonction(paramètre_fonction):
 
 ---
 
-Arranger la template HTML
------------------------
+## Étape 4 : HTML
 
 ```HTML
 {% extends "conteneur.html" %}
@@ -132,15 +113,10 @@ Arranger la template HTML
 
   * Il faut impérativement ajouter le mode ```|safe``` à la template pour que les éléments HTML soit interprétés par le navigateur.
 
-Résultat
------------------------
+---
 
-Bibliographie
------------------------
+## Documentation
 
 * lxml : https://lxml.de/
 
 * Flask : https://palletsprojects.com/p/flask/
-
-A propos des auteurs
------------------------
