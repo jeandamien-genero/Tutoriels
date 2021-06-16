@@ -65,3 +65,8 @@ git restore <fichier>
 ```Git
 git commit -m --no-edit
 ```
+
+  * Modifier le message de commit :
+```Git
+git commit --amend -m "<nouveau message"
+```
