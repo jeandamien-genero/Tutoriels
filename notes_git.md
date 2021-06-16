@@ -56,6 +56,11 @@ git push
 
 ## Commits
 
+  * Annuler un `git add` :
+```Git
+git restore <fichier>
+```
+
   * Ne pas déclarer de modification :
 ```Git
 git commit -m --no-edit
