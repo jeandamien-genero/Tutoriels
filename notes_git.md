@@ -70,3 +70,12 @@ git commit -m --no-edit
 ```Git
 git commit --amend -m "<nouveau message>"
 ```
+
+  * Annuler des commits en local :
+```Git
+git status
+git log
+[copier l'id du commit auquel on veut remonter]
+git reset --hard <id du commit>
+```
+  Faire de même sur GitHub: `git push origin HEAD --force`
